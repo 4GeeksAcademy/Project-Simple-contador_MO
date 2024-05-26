@@ -1,9 +1,10 @@
 .bigCounter{
     text-align: center;
-
-    
+    margin-top: 100px;
+   
 }
 .bigCounter div{
+    
     display: inline-block;
     font-size: 60px;
     height: 150px;

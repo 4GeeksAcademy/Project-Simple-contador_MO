@@ -11,7 +11,7 @@ import "../styles/index.css";
 function SimpleCounter(props){
 	return (
 		<div className="bigCounter">
-			<h1>Counter</h1>
+			
 			<div className="calander">
 			<i className="far fa-clock"></i>
 			</div>
@@ -32,7 +32,7 @@ SimpleCounter.propTypes = {
 let counter = 0;
 
 setInterval(function(){
-	const four = Math.floor(counter/1000);
+	const four = Math.floor(counter/3000);
 	const three = Math.floor(counter/100);
 	const two = Math.floor(counter/10);
 	const one = Math.floor(counter/1);
@@ -44,7 +44,7 @@ setInterval(function(){
 ReactDOM.render(
 		<SimpleCounter digitOne={one} digitTwo={two} digitThree={three} digitFour={four} />,
 		document.querySelector("#app"));
-},1000);
+},3000);
 
 
 //render your react application
